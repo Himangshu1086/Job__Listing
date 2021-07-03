@@ -3,28 +3,16 @@ import { Link } from 'react-router-dom'
 import $ from 'jquery'
 function Navbar() {
 
-useEffect(()=>{
-
+  window.addEventListener('scroll' , function(){
+    let res = window.scrollY;
+    if(res >= 650)
+      $("#navbar").css({'backgroundColor':'black' , 'padding':'2px' , 'transition':'all 1s' })  
+    else
+      $("#navbar").css({'backgroundColor':'transparent' , 'padding':'40px' })
+    
   
+  })
 
-},[])
-
-window.addEventListener('scroll' , function(){
-  let res = window.scrollY;
-  if(res >= 710)
-  {
-    document.getElementById("navbar").style.backgroundColor = "black";
-    document.getElementById("navbar").style.padding = "2px";
-    document.getElementById("navbar").style.transition = " all 1s";
-
-
-  }
-  else{
-    document.getElementById("navbar").style.backgroundColor = "transparent";
-    document.getElementById("navbar").style.padding = "40px";
-  }
-
-})
 
   return (
     <div>
