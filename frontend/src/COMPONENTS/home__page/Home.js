@@ -8,10 +8,13 @@ import Slide__show from './slide__show/Slide__show'
 function Home() {
     return (
         <>
+        <div className="mb-4">
+
             <Navbar/>
             <Slide__show/>
             <Poster/>
             <Container__For__Category/>
+        </div>
         </>
     )
 }
