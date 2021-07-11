@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const expertSchema = new mongoose.Schema({
 
     profession : {type:String , required:true},
+    availability : {type:Boolean ,  default:true },
     name : {type : String , required:true},
     school : {type : String , required:true},
     twelveCollege :{type : String , required:true},

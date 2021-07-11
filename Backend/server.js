@@ -14,6 +14,7 @@ require("./__DATABASE/__INITDB/initDB");
 app.use(require('./__ROUTER/experten'))
 app.use(require('./__ROUTER/Auth'))
 app.use(require('./__ROUTER/experten'))
+app.use(require('./__ROUTER/Services'))
 
 
 const PORT = process.env.PORT
